@@ -1,0 +1,1 @@
+package com.example.buttonclicknewactivity; import android.os.Bundle; import androidx.appcompat.app.AppCompatActivity; public class SecondActivity extends AppCompatActivity { @Override protected void onCreate(Bundle b){super.onCreate(b);setContentView(R.layout.activity_second);}}

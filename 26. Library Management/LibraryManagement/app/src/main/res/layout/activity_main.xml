@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Library Management"
+                android:textColor="#2196F3"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:layout_marginBottom="25dp"/>
+
+            <EditText
+                android:id="@+id/etBookId"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Book ID"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/etBookName"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Book Name"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/etAuthor"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Author Name"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/etPublisher"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Publisher Name"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/etYear"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Published Year"
+                android:inputType="number"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/etStock"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Stock"
+                android:inputType="number"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Add Book"
+                android:textStyle="italic"
+                android:backgroundTint="#2196F3"
+                android:onClick="addBook"/>
+
+            <Button
+                android:id="@+id/btnView"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="View Details"
+                android:textStyle="italic"
+                android:backgroundTint="#2196F3"
+                android:onClick="viewBooks"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

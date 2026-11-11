@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Communication"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#2196F3"
+                android:layout_marginBottom="25dp" />
+
+            <!-- Main Buttons -->
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Send SMS"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:backgroundTint="#2196F3"
+                android:onClick="showSMS"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Send Email"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:backgroundTint="#2196F3"
+                android:onClick="showEmail"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Make a Call"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:backgroundTint="#2196F3"
+                android:onClick="showCall"
+                android:layout_marginBottom="20dp" />
+
+            <!-- SMS Fields -->
+
+            <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/smsMessage"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="SMS Message"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:layout_marginBottom="15dp" />
+
+            <Button
+                android:id="@+id/sendSmsButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Send SMS"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:backgroundTint="#2196F3"
+                android:onClick="sendSMS"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Email Fields -->
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/subject"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Subject"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/emailMessage"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Email Message"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:layout_marginBottom="15dp" />
+
+            <Button
+                android:id="@+id/sendEmailButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Send Email"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:backgroundTint="#2196F3"
+                android:onClick="sendEmail"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Call Field -->
+
+            <EditText
+                android:id="@+id/callNumber"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:visibility="gone"
+                android:layout_marginBottom="15dp" />
+
+            <Button
+                android:id="@+id/makeCallButton"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Make a Call"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:backgroundTint="#2196F3"
+                android:onClick="makeCall"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

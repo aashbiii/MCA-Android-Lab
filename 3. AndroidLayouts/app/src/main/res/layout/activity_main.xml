@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android Layout Demonstration"
+            android:textColor="#2196F3"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"/>
+<LinearLayout android:layout_width="300dp" android:layout_height="wrap_content" android:orientation="vertical" android:padding="10dp" android:background="#F5F5F5" android:layout_marginBottom="15dp"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LinearLayout" android:textColor="#2196F3" android:textSize="20sp" android:textStyle="bold"/><LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="One"/><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Two" android:layout_marginStart="12dp"/></LinearLayout></LinearLayout><LinearLayout android:layout_width="300dp" android:layout_height="wrap_content" android:orientation="vertical" android:padding="10dp" android:background="#F5F5F5" android:layout_marginBottom="15dp"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RelativeLayout" android:textColor="#2196F3" android:textSize="20sp" android:textStyle="bold"/><RelativeLayout android:layout_width="match_parent" android:layout_height="70dp"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:text="Left"/><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="Right"/></RelativeLayout></LinearLayout><LinearLayout android:layout_width="300dp" android:layout_height="wrap_content" android:orientation="vertical" android:padding="10dp" android:background="#F5F5F5" android:layout_marginBottom="15dp"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FrameLayout" android:textColor="#2196F3" android:textSize="20sp" android:textStyle="bold"/><FrameLayout android:layout_width="match_parent" android:layout_height="110dp"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="Background" android:textSize="20sp" android:textStyle="bold"/><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="top|center" android:text="Top"/></FrameLayout></LinearLayout><LinearLayout android:layout_width="300dp" android:layout_height="wrap_content" android:orientation="vertical" android:padding="10dp" android:background="#F5F5F5" android:layout_marginBottom="15dp"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TableLayout" android:textColor="#2196F3" android:textSize="20sp" android:textStyle="bold"/><TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:stretchColumns="*"><TableRow><TextView android:gravity="center" android:padding="10dp" android:text="A"/><TextView android:gravity="center" android:padding="10dp" android:text="B"/></TableRow><TableRow><TextView android:gravity="center" android:padding="10dp" android:text="C"/><TextView android:gravity="center" android:padding="10dp" android:text="D"/></TableRow></TableLayout></LinearLayout><LinearLayout android:layout_width="300dp" android:layout_height="wrap_content" android:orientation="vertical" android:padding="10dp" android:background="#F5F5F5"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GridLayout" android:textColor="#2196F3" android:textSize="20sp" android:textStyle="bold"/><GridLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:columnCount="2" android:useDefaultMargins="true"><Button android:layout_width="120dp" android:layout_height="wrap_content" android:text="1"/><Button android:layout_width="120dp" android:layout_height="wrap_content" android:text="2"/><Button android:layout_width="120dp" android:layout_height="wrap_content" android:text="3"/><Button android:layout_width="120dp" android:layout_height="wrap_content" android:text="4"/></GridLayout></LinearLayout>        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

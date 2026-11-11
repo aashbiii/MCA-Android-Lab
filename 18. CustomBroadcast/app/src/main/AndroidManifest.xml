@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <application
+        android:allowBackup="true"
+        android:label="Custom Broadcast"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App">
+        <activity android:name=".MainActivity" android:exported="true" />
+        <receiver android:name=".MyReceiver" android:exported="false"><intent-filter><action android:name="com.example.custombroadcast.MY_ACTION"/></intent-filter></receiver>
+    </application>
+</manifest>

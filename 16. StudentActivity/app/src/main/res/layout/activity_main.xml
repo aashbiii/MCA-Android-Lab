@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Details"
+            android:textColor="#2196F3"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"/>
+<EditText
+            android:id="@+id/name"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp"/>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Department" android:textColor="#2196F3" android:textSize="20sp" android:textStyle="bold"/><RadioGroup android:id="@+id/radioGroupDept" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginBottom="12dp"><RadioButton android:id="@+id/rbCS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Computer Science"/><RadioButton android:id="@+id/rbCivil" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Civil"/><RadioButton android:id="@+id/rbMechanic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mechanical"/></RadioGroup><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Preferred Courses" android:textColor="#2196F3" android:textSize="20sp" android:textStyle="bold"/><CheckBox android:id="@+id/cbAI" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AI/ML"/><CheckBox android:id="@+id/cbCloud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cloud"/><CheckBox android:id="@+id/cbShip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ship Technology"/><CheckBox android:id="@+id/cbAuto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Autocad"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gender" android:textColor="#2196F3" android:textSize="20sp" android:textStyle="bold"/><RadioGroup android:id="@+id/radioGroupGender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="10dp"><RadioButton android:id="@+id/rbMale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Male"/><RadioButton android:id="@+id/rbFemale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Female"/></RadioGroup><EditText
+            android:id="@+id/phone"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone number"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:inputType="phone"
+            android:layout_marginBottom="12dp"/>
+<Button
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Insert"
+            android:backgroundTint="#2196F3"
+            android:textStyle="italic"
+            android:onClick="insert"
+            android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Salary Calculator"
+            android:textColor="#2196F3"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:layout_marginBottom="25dp"/>
+<EditText
+            android:id="@+id/etName"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Employee Name"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="12dp"/>
+<EditText
+            android:id="@+id/etId"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Employee ID"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+<EditText
+            android:id="@+id/etSalary"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Basic Salary"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"/>
+<Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Calculate Salary"
+            android:backgroundTint="#2196F3"
+            android:textStyle="italic"
+            android:onClick="calculateSalary"
+            android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

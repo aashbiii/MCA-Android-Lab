@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shake / Tilt Color"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#2196F3"
+                android:gravity="center"
+                android:layout_marginBottom="30dp" />
+
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="280dp"
+                android:layout_height="60dp"
+                android:text="Shake or tilt your phone"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:background="#E3F2FD" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
